@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  VpieNextGen
+
+  Created by Demet Akyol on 4.11.2025.
+  
+*/
+
+"privacy_policy" = "Privacy Policy";
+"scan_barcode_camera" = "Scan with camera";
+"scan_barcode_device" = "Scan with device";
+"mark_as_defective" = "Mark as defective";
+"delete_user" = "Delete user";
+"logout" = "Logout";
+"sync_now" = "Synchronize now";
+"send_diagnostics" = "Send diagnostics";
+"sync_inventory_data" = "Sync inventory data";
+"update_inventory" = "Update inventory";
+"directions" = "Directions";
+"resume" = "Resume";
+
+
+
+
+
+
