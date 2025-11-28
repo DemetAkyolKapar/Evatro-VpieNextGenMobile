@@ -11,15 +11,20 @@
 		AD0D45372EC376630021068B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D45352EC376630021068B /* SettingsViewModel.swift */; };
 		AD0D45392EC378670021068B /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D45382EC378670021068B /* ActionRow.swift */; };
 		AD0D453C2EC3793C0021068B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D453B2EC3793C0021068B /* SettingsView.swift */; };
-		AD0D5E872EC6155500E064CC /* JobItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D5E862EC6155500E064CC /* JobItemView.swift */; };
 		AD0D5E8A2EC91A6800E064CC /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D5E892EC91A6800E064CC /* DesignSystem.swift */; };
+		AD314B722ED5A55C0068B631 /* JobsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B6C2ED5A55C0068B631 /* JobsMainView.swift */; };
+		AD314B742ED5A55C0068B631 /* JobItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B6F2ED5A55C0068B631 /* JobItemView.swift */; };
+		AD314B752ED5A55C0068B631 /* JobItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B702ED5A55C0068B631 /* JobItemViewModel.swift */; };
+		AD314B762ED5A55C0068B631 /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B712ED5A55C0068B631 /* JobListView.swift */; };
+		AD314B782ED5DA130068B631 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B772ED5DA130068B631 /* ScrollableTabBar.swift */; };
+		AD314B7B2ED5F69B0068B631 /* JobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B792ED5F69B0068B631 /* JobService.swift */; };
+		AD314B7C2ED5F69B0068B631 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */; };
+		AD6869FB2ED87552003B15D5 /* ExpandableListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */; };
 		ADCBFE3F2EC47E4D001E458C /* DeviceBehaviorUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE3E2EC47E4D001E458C /* DeviceBehaviorUpdater.swift */; };
 		ADCBFE422EC4AF0E001E458C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE412EC4AF0E001E458C /* AccountView.swift */; };
 		ADCBFE452EC4CB1E001E458C /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE432EC4CB1E001E458C /* AccountService.swift */; };
 		ADCBFE462EC4CB1E001E458C /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE442EC4CB1E001E458C /* AccountViewModel.swift */; };
 		ADCC5BD12EC5C60200BF8135 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC5BD02EC5C60200BF8135 /* Color+Theme.swift */; };
-		ADCC5BD42EC5D90B00BF8135 /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC5BD32EC5D90B00BF8135 /* JobListView.swift */; };
-		ADCC5BD62EC5D93A00BF8135 /* JobsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC5BD52EC5D93A00BF8135 /* JobsMainView.swift */; };
 		ADD016622EBA12DC0044A0B4 /* VpieNextGenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD016612EBA12DC0044A0B4 /* VpieNextGenApp.swift */; };
 		ADD016642EBA12DC0044A0B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD016632EBA12DC0044A0B4 /* ContentView.swift */; };
 		ADD016662EBA12DF0044A0B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD016652EBA12DF0044A0B4 /* Assets.xcassets */; };
@@ -39,7 +44,6 @@
 		ADD846922ED59D01005AA436 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD8468E2ED59D01005AA436 /* InventoryView.swift */; };
 		ADD846932ED59D01005AA436 /* InventoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD8468F2ED59D01005AA436 /* InventoryViewModel.swift */; };
 		ADD846942ED59D01005AA436 /* InventoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD846902ED59D01005AA436 /* InventoryModels.swift */; };
-		ADD846962ED59D20005AA436 /* AppBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD846952ED59D1F005AA436 /* AppBackgroundModifier.swift */; };
 		ADE1FCDF2EC22DF700516859 /* FloatingSubtitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1FCDC2EC22DF700516859 /* FloatingSubtitleRow.swift */; };
 		ADE1FCE62EC31D7D00516859 /* EnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1FCE52EC31D7D00516859 /* EnvironmentKeys.swift */; };
 		ADE1FCEA2EC3262100516859 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1FCE92EC3262100516859 /* BorderedButton.swift */; };
@@ -72,15 +76,20 @@
 		AD0D45352EC376630021068B /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AD0D45382EC378670021068B /* ActionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
 		AD0D453B2EC3793C0021068B /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		AD0D5E862EC6155500E064CC /* JobItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobItemView.swift; sourceTree = "<group>"; };
 		AD0D5E892EC91A6800E064CC /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		AD314B6C2ED5A55C0068B631 /* JobsMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsMainView.swift; sourceTree = "<group>"; };
+		AD314B6F2ED5A55C0068B631 /* JobItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobItemView.swift; sourceTree = "<group>"; };
+		AD314B702ED5A55C0068B631 /* JobItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobItemViewModel.swift; sourceTree = "<group>"; };
+		AD314B712ED5A55C0068B631 /* JobListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
+		AD314B772ED5DA130068B631 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
+		AD314B792ED5F69B0068B631 /* JobService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobService.swift; sourceTree = "<group>"; };
+		AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListCard.swift; sourceTree = "<group>"; };
 		ADCBFE3E2EC47E4D001E458C /* DeviceBehaviorUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBehaviorUpdater.swift; sourceTree = "<group>"; };
 		ADCBFE412EC4AF0E001E458C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		ADCBFE432EC4CB1E001E458C /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		ADCBFE442EC4CB1E001E458C /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		ADCC5BD02EC5C60200BF8135 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
-		ADCC5BD32EC5D90B00BF8135 /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
-		ADCC5BD52EC5D93A00BF8135 /* JobsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsMainView.swift; sourceTree = "<group>"; };
 		ADD0165E2EBA12DC0044A0B4 /* VpieNextGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VpieNextGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD016612EBA12DC0044A0B4 /* VpieNextGenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VpieNextGenApp.swift; sourceTree = "<group>"; };
 		ADD016632EBA12DC0044A0B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,7 +113,6 @@
 		ADD8468E2ED59D01005AA436 /* InventoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		ADD8468F2ED59D01005AA436 /* InventoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryViewModel.swift; sourceTree = "<group>"; };
 		ADD846902ED59D01005AA436 /* InventoryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryModels.swift; sourceTree = "<group>"; };
-		ADD846952ED59D1F005AA436 /* AppBackgroundModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBackgroundModifier.swift; sourceTree = "<group>"; };
 		ADE1FCDC2EC22DF700516859 /* FloatingSubtitleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSubtitleRow.swift; sourceTree = "<group>"; };
 		ADE1FCE52EC31D7D00516859 /* EnvironmentKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKeys.swift; sourceTree = "<group>"; };
 		ADE1FCE92EC3262100516859 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
@@ -139,12 +147,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD0D5E882EC6155A00E064CC /* New Group */ = {
+		AD314B6A2ED5A5360068B631 /* Job */ = {
 			isa = PBXGroup;
 			children = (
-				AD0D5E862EC6155500E064CC /* JobItemView.swift */,
+				AD314B6C2ED5A55C0068B631 /* JobsMainView.swift */,
+				AD314B6B2ED5A55C0068B631 /* JobList */,
 			);
-			path = "New Group";
+			path = Job;
+			sourceTree = "<group>";
+		};
+		AD314B6B2ED5A55C0068B631 /* JobList */ = {
+			isa = PBXGroup;
+			children = (
+				AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */,
+				AD314B792ED5F69B0068B631 /* JobService.swift */,
+				AD314B6D2ED5A55C0068B631 /* JobItem */,
+				AD314B712ED5A55C0068B631 /* JobListView.swift */,
+			);
+			path = JobList;
+			sourceTree = "<group>";
+		};
+		AD314B6D2ED5A55C0068B631 /* JobItem */ = {
+			isa = PBXGroup;
+			children = (
+				AD314B6F2ED5A55C0068B631 /* JobItemView.swift */,
+				AD314B702ED5A55C0068B631 /* JobItemViewModel.swift */,
+			);
+			path = JobItem;
 			sourceTree = "<group>";
 		};
 		ADCBFE402EC4AEC6001E458C /* Account */ = {
@@ -155,16 +184,6 @@
 				ADCBFE412EC4AF0E001E458C /* AccountView.swift */,
 			);
 			path = Account;
-			sourceTree = "<group>";
-		};
-		ADCC5BD22EC5D8B800BF8135 /* JobList */ = {
-			isa = PBXGroup;
-			children = (
-				AD0D5E882EC6155A00E064CC /* New Group */,
-				ADCC5BD32EC5D90B00BF8135 /* JobListView.swift */,
-				ADCC5BD52EC5D93A00BF8135 /* JobsMainView.swift */,
-			);
-			path = JobList;
 			sourceTree = "<group>";
 		};
 		ADD016552EBA12DC0044A0B4 = {
@@ -190,20 +209,18 @@
 		ADD016602EBA12DC0044A0B4 /* VpieNextGen */ = {
 			isa = PBXGroup;
 			children = (
-				ADD8468C2ED59D01005AA436 /* Inventory */,
 				ADCBFE402EC4AEC6001E458C /* Account */,
 				ADD016AB2EBB2E160044A0B4 /* CommonUI */,
 				ADD016632EBA12DC0044A0B4 /* ContentView.swift */,
 				ADFC23612EC1D1FD00BEA8F0 /* Info.plist */,
-				ADD016932EBA15050044A0B4 /* Job */,
+				ADD8468C2ED59D01005AA436 /* Inventory */,
+				AD314B6A2ED5A5360068B631 /* Job */,
 				ADD016952EBA17A60044A0B4 /* Login */,
-				ADD016922EBA14B20044A0B4 /* Message&Feeds */,
 				ADD0166A2EBA12DF0044A0B4 /* Persistence.swift */,
 				ADD016672EBA12DF0044A0B4 /* Preview Content */,
 				ADD0169C2EBA21B30044A0B4 /* Resources */,
 				ADD016902EBA14900044A0B4 /* Setting */,
 				ADE1FCE42EC31D4E00516859 /* Shared */,
-				ADD016942EBA16BF0044A0B4 /* Sync */,
 				ADD0166C2EBA12DF0044A0B4 /* VpieNextGen.xcdatamodeld */,
 				ADD016612EBA12DC0044A0B4 /* VpieNextGenApp.swift */,
 			);
@@ -245,28 +262,6 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		ADD016922EBA14B20044A0B4 /* Message&Feeds */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Message&Feeds";
-			sourceTree = "<group>";
-		};
-		ADD016932EBA15050044A0B4 /* Job */ = {
-			isa = PBXGroup;
-			children = (
-				ADCC5BD22EC5D8B800BF8135 /* JobList */,
-			);
-			path = Job;
-			sourceTree = "<group>";
-		};
-		ADD016942EBA16BF0044A0B4 /* Sync */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sync;
-			sourceTree = "<group>";
-		};
 		ADD016952EBA17A60044A0B4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,11 +286,13 @@
 		ADD016AB2EBB2E160044A0B4 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
-				ADE1FCDC2EC22DF700516859 /* FloatingSubtitleRow.swift */,
-				ADD016AC2EBB2E160044A0B4 /* SkyFloatingTextField.swift */,
-				ADE1FCE92EC3262100516859 /* BorderedButton.swift */,
 				ADE1FCEB2EC32CA500516859 /* AdaptiveStack.swift */,
+				ADE1FCE92EC3262100516859 /* BorderedButton.swift */,
 				AD08114B2ECDC19E00A23E8A /* DashedLine.swift */,
+				ADE1FCDC2EC22DF700516859 /* FloatingSubtitleRow.swift */,
+				AD314B772ED5DA130068B631 /* ScrollableTabBar.swift */,
+				ADD016AC2EBB2E160044A0B4 /* SkyFloatingTextField.swift */,
+				AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -326,7 +323,6 @@
 			isa = PBXGroup;
 			children = (
 				ADCC5BD02EC5C60200BF8135 /* Color+Theme.swift */,
-				ADD846952ED59D1F005AA436 /* AppBackgroundModifier.swift */,
 				ADFC6FCD2ECDFFAD004DF80F /* CardStyle.swift */,
 			);
 			path = Extensions;
@@ -489,29 +485,33 @@
 				ADCBFE422EC4AF0E001E458C /* AccountView.swift in Sources */,
 				AD08114C2ECDC19E00A23E8A /* DashedLine.swift in Sources */,
 				ADE1FCEA2EC3262100516859 /* BorderedButton.swift in Sources */,
+				AD314B722ED5A55C0068B631 /* JobsMainView.swift in Sources */,
 				ADD0166B2EBA12DF0044A0B4 /* Persistence.swift in Sources */,
-				ADD846962ED59D20005AA436 /* AppBackgroundModifier.swift in Sources */,
 				ADCBFE452EC4CB1E001E458C /* AccountService.swift in Sources */,
 				AD0D45372EC376630021068B /* SettingsViewModel.swift in Sources */,
 				AD0D453C2EC3793C0021068B /* SettingsView.swift in Sources */,
 				ADE1FCDF2EC22DF700516859 /* FloatingSubtitleRow.swift in Sources */,
 				ADE1FCEC2EC32CA500516859 /* AdaptiveStack.swift in Sources */,
 				ADD846922ED59D01005AA436 /* InventoryView.swift in Sources */,
+				AD6869FB2ED87552003B15D5 /* ExpandableListCard.swift in Sources */,
 				ADCBFE462EC4CB1E001E458C /* AccountViewModel.swift in Sources */,
 				ADD0166E2EBA12DF0044A0B4 /* VpieNextGen.xcdatamodeld in Sources */,
-				AD0D5E872EC6155500E064CC /* JobItemView.swift in Sources */,
+				AD314B742ED5A55C0068B631 /* JobItemView.swift in Sources */,
 				ADD846912ED59D01005AA436 /* InventoryService.swift in Sources */,
 				ADD016AD2EBB2E170044A0B4 /* SkyFloatingTextField.swift in Sources */,
+				AD314B782ED5DA130068B631 /* ScrollableTabBar.swift in Sources */,
 				ADD846932ED59D01005AA436 /* InventoryViewModel.swift in Sources */,
-				ADCC5BD62EC5D93A00BF8135 /* JobsMainView.swift in Sources */,
 				ADD0169B2EBA207C0044A0B4 /* LoginModels.swift in Sources */,
 				ADCC5BD12EC5C60200BF8135 /* Color+Theme.swift in Sources */,
 				ADD016992EBA1E640044A0B4 /* LoginViewModel.swift in Sources */,
 				ADFC6FCE2ECDFFAD004DF80F /* CardStyle.swift in Sources */,
+				AD314B752ED5A55C0068B631 /* JobItemViewModel.swift in Sources */,
 				ADD016642EBA12DC0044A0B4 /* ContentView.swift in Sources */,
-				ADCC5BD42EC5D90B00BF8135 /* JobListView.swift in Sources */,
 				ADD846942ED59D01005AA436 /* InventoryModels.swift in Sources */,
+				AD314B7B2ED5F69B0068B631 /* JobService.swift in Sources */,
+				AD314B762ED5A55C0068B631 /* JobListView.swift in Sources */,
 				ADD016972EBA1E530044A0B4 /* LoginView.swift in Sources */,
+				AD314B7C2ED5F69B0068B631 /* JobListViewModel.swift in Sources */,
 				ADD016622EBA12DC0044A0B4 /* VpieNextGenApp.swift in Sources */,
 				AD0D45392EC378670021068B /* ActionRow.swift in Sources */,
 				ADD0169F2EBA76710044A0B4 /* AuthService.swift in Sources */,

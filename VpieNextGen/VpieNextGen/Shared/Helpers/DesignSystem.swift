@@ -28,17 +28,24 @@ struct AppLineWidth {
 }
 
 struct AppSpacing {
+    static let large: CGFloat = 48
     static let standard: CGFloat = 24
     static let thin: CGFloat = 12
     static let tight: CGFloat = 8
 }
 
 struct FontSize {
-    @ScaledMetric  static var thick: CGFloat = 9
-    @ScaledMetric  static var thin: CGFloat = 12
-    @ScaledMetric  static var standard: CGFloat = 16
-    @ScaledMetric  static var large: CGFloat = 18
-    @ScaledMetric  static var xlarge: CGFloat = 24
+    @ScaledMetric(relativeTo: .title)  static var thick: CGFloat = 9
+    @ScaledMetric(relativeTo: .title)  static var thin: CGFloat = 12
+    @ScaledMetric(relativeTo: .title)  static var standard: CGFloat = 16
+    @ScaledMetric(relativeTo: .title)  static var large: CGFloat = 18
+    @ScaledMetric(relativeTo: .title)  static var xlarge: CGFloat = 24
 
 
+}
+extension Font {
+    static func scalable(size: CGFloat) -> Font {
+        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+        return .system(size: scaledSize)
+    }
 }
