@@ -20,6 +20,7 @@
 		AD314B7B2ED5F69B0068B631 /* JobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B792ED5F69B0068B631 /* JobService.swift */; };
 		AD314B7C2ED5F69B0068B631 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */; };
 		AD6869FB2ED87552003B15D5 /* ExpandableListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */; };
+		AD6869FD2EDD7EB3003B15D5 /* FixedGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6869FC2EDD7EB3003B15D5 /* FixedGridLayout.swift */; };
 		ADCBFE3F2EC47E4D001E458C /* DeviceBehaviorUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE3E2EC47E4D001E458C /* DeviceBehaviorUpdater.swift */; };
 		ADCBFE422EC4AF0E001E458C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE412EC4AF0E001E458C /* AccountView.swift */; };
 		ADCBFE452EC4CB1E001E458C /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE432EC4CB1E001E458C /* AccountService.swift */; };
@@ -85,6 +86,7 @@
 		AD314B792ED5F69B0068B631 /* JobService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobService.swift; sourceTree = "<group>"; };
 		AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
 		AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListCard.swift; sourceTree = "<group>"; };
+		AD6869FC2EDD7EB3003B15D5 /* FixedGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedGridLayout.swift; sourceTree = "<group>"; };
 		ADCBFE3E2EC47E4D001E458C /* DeviceBehaviorUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBehaviorUpdater.swift; sourceTree = "<group>"; };
 		ADCBFE412EC4AF0E001E458C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		ADCBFE432EC4CB1E001E458C /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				AD314B772ED5DA130068B631 /* ScrollableTabBar.swift */,
 				ADD016AC2EBB2E160044A0B4 /* SkyFloatingTextField.swift */,
 				AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */,
+				AD6869FC2EDD7EB3003B15D5 /* FixedGridLayout.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				AD0D45372EC376630021068B /* SettingsViewModel.swift in Sources */,
 				AD0D453C2EC3793C0021068B /* SettingsView.swift in Sources */,
 				ADE1FCDF2EC22DF700516859 /* FloatingSubtitleRow.swift in Sources */,
+				AD6869FD2EDD7EB3003B15D5 /* FixedGridLayout.swift in Sources */,
 				ADE1FCEC2EC32CA500516859 /* AdaptiveStack.swift in Sources */,
 				ADD846922ED59D01005AA436 /* InventoryView.swift in Sources */,
 				AD6869FB2ED87552003B15D5 /* ExpandableListCard.swift in Sources */,

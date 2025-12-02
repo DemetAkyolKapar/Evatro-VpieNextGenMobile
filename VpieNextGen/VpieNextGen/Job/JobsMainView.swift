@@ -83,8 +83,8 @@ struct JobsMainView: View {
                             .shadow(color: .appBlack.opacity(0.05), radius: 6, x: 0, y: 3)
                         VStack(alignment: .center, spacing: rowSpacing) {
                             Image(isWeek ? "weekCalendar" : "todayCalendar")
-                                .font(.system(size: iconFont, weight: .semibold))
-                                .foregroundStyle(Color(hex: "#7C3AED"))
+                                .resizable()
+                                .scaledToFit()
                                 .frame(width: iconSize, height: iconSize)
                                 .background(Circle().fill(.appWhite.opacity(0.25)))
                             Text(isWeek ? "Week" : "Day")

@@ -9,9 +9,9 @@ import SwiftUI
 final class JobItemViewModel: ObservableObject {
     struct Item: Identifiable, Equatable {
         let id: UUID
-        var orderNumber: Int // the big circle number (1,2,...) on the left
-        var clientName: String // e.g. "1600 DUBLIN RD"
-        var planTime: String? // e.g. "09:30"
+        var orderNumber: NSDecimalNumber
+        var clientName: String
+        var planTime: String?
         var status: Status
         var phone: String?
         var oldMeterNumber: String?
@@ -20,7 +20,7 @@ final class JobItemViewModel: ObservableObject {
         var lastReadProvided: String?
         var address: String?
 
-        init(id: UUID = UUID(), orderNumber: Int, clientName: String, planTime: String? = nil, status: Status, phone: String? = nil, oldMeterNumber: String? = nil, lrp: String? = nil, oldRadioId: String? = nil, lastReadProvided: String? = nil, address: String? = nil) {
+        init(id: UUID = UUID(), orderNumber: NSDecimalNumber, clientName: String, planTime: String? = nil, status: Status, phone: String? = nil, oldMeterNumber: String? = nil, lrp: String? = nil, oldRadioId: String? = nil, lastReadProvided: String? = nil, address: String? = nil) {
             self.id = id
             self.orderNumber = orderNumber
             self.clientName = clientName
@@ -39,7 +39,6 @@ final class JobItemViewModel: ObservableObject {
         case assigned = "Assigned"
         case inProgress = "In Progress"
         case completed = "Completed"
-        case paused = "Paused"
         case cancelled = "Cancelled"
 
         var color: Color {
@@ -47,7 +46,6 @@ final class JobItemViewModel: ObservableObject {
             case .assigned: return .blue
             case .inProgress: return .orange
             case .completed: return .green
-            case .paused: return .gray
             case .cancelled: return .red
             }
         }

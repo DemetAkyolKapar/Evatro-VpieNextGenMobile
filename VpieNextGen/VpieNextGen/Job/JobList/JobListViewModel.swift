@@ -11,7 +11,7 @@ import Foundation
 
 final class JobItemCardViewModel: JobItemVMProtocol {
     let id: UUID
-    @Published var orderNumber: Int
+    @Published var orderNumber: NSDecimalNumber
     @Published var assetName: String
     @Published var planTime: String?
     @Published var statusText: String
