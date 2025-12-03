@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD02025D2EE02B5E007124DC /* FormHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02025C2EE02B5E007124DC /* FormHistoryView.swift */; };
 		AD08114C2ECDC19E00A23E8A /* DashedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08114B2ECDC19E00A23E8A /* DashedLine.swift */; };
 		AD0D45372EC376630021068B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D45352EC376630021068B /* SettingsViewModel.swift */; };
 		AD0D45392EC378670021068B /* ActionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D45382EC378670021068B /* ActionRow.swift */; };
@@ -19,6 +20,9 @@
 		AD314B782ED5DA130068B631 /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B772ED5DA130068B631 /* ScrollableTabBar.swift */; };
 		AD314B7B2ED5F69B0068B631 /* JobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B792ED5F69B0068B631 /* JobService.swift */; };
 		AD314B7C2ED5F69B0068B631 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */; };
+		AD39436A2EDECF4800300B6C /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3943692EDECF4800300B6C /* JobDetailView.swift */; };
+		AD39436C2EDEDD5D00300B6C /* NewJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39436B2EDEDD5D00300B6C /* NewJobView.swift */; };
+		AD39436E2EDF075E00300B6C /* ExpandableActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39436D2EDF075E00300B6C /* ExpandableActivityCard.swift */; };
 		AD6869FB2ED87552003B15D5 /* ExpandableListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */; };
 		AD6869FD2EDD7EB3003B15D5 /* FixedGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6869FC2EDD7EB3003B15D5 /* FixedGridLayout.swift */; };
 		ADCBFE3F2EC47E4D001E458C /* DeviceBehaviorUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBFE3E2EC47E4D001E458C /* DeviceBehaviorUpdater.swift */; };
@@ -73,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD02025C2EE02B5E007124DC /* FormHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHistoryView.swift; sourceTree = "<group>"; };
 		AD08114B2ECDC19E00A23E8A /* DashedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLine.swift; sourceTree = "<group>"; };
 		AD0D45352EC376630021068B /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AD0D45382EC378670021068B /* ActionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionRow.swift; sourceTree = "<group>"; };
@@ -85,6 +90,9 @@
 		AD314B772ED5DA130068B631 /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
 		AD314B792ED5F69B0068B631 /* JobService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobService.swift; sourceTree = "<group>"; };
 		AD314B7A2ED5F69B0068B631 /* JobListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		AD3943692EDECF4800300B6C /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		AD39436B2EDEDD5D00300B6C /* NewJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobView.swift; sourceTree = "<group>"; };
+		AD39436D2EDF075E00300B6C /* ExpandableActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableActivityCard.swift; sourceTree = "<group>"; };
 		AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableListCard.swift; sourceTree = "<group>"; };
 		AD6869FC2EDD7EB3003B15D5 /* FixedGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedGridLayout.swift; sourceTree = "<group>"; };
 		ADCBFE3E2EC47E4D001E458C /* DeviceBehaviorUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceBehaviorUpdater.swift; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 		AD314B6A2ED5A5360068B631 /* Job */ = {
 			isa = PBXGroup;
 			children = (
+				AD3943682EDECF2800300B6C /* JobDetail */,
 				AD314B6C2ED5A55C0068B631 /* JobsMainView.swift */,
 				AD314B6B2ED5A55C0068B631 /* JobList */,
 			);
@@ -176,6 +185,16 @@
 				AD314B702ED5A55C0068B631 /* JobItemViewModel.swift */,
 			);
 			path = JobItem;
+			sourceTree = "<group>";
+		};
+		AD3943682EDECF2800300B6C /* JobDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AD3943692EDECF4800300B6C /* JobDetailView.swift */,
+				AD39436B2EDEDD5D00300B6C /* NewJobView.swift */,
+				AD02025C2EE02B5E007124DC /* FormHistoryView.swift */,
+			);
+			path = JobDetail;
 			sourceTree = "<group>";
 		};
 		ADCBFE402EC4AEC6001E458C /* Account */ = {
@@ -296,6 +315,7 @@
 				ADD016AC2EBB2E160044A0B4 /* SkyFloatingTextField.swift */,
 				AD6869FA2ED87552003B15D5 /* ExpandableListCard.swift */,
 				AD6869FC2EDD7EB3003B15D5 /* FixedGridLayout.swift */,
+				AD39436D2EDF075E00300B6C /* ExpandableActivityCard.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -485,6 +505,7 @@
 			files = (
 				AD0D5E8A2EC91A6800E064CC /* DesignSystem.swift in Sources */,
 				ADE1FCE62EC31D7D00516859 /* EnvironmentKeys.swift in Sources */,
+				AD39436E2EDF075E00300B6C /* ExpandableActivityCard.swift in Sources */,
 				ADCBFE422EC4AF0E001E458C /* AccountView.swift in Sources */,
 				AD08114C2ECDC19E00A23E8A /* DashedLine.swift in Sources */,
 				ADE1FCEA2EC3262100516859 /* BorderedButton.swift in Sources */,
@@ -503,6 +524,7 @@
 				AD314B742ED5A55C0068B631 /* JobItemView.swift in Sources */,
 				ADD846912ED59D01005AA436 /* InventoryService.swift in Sources */,
 				ADD016AD2EBB2E170044A0B4 /* SkyFloatingTextField.swift in Sources */,
+				AD02025D2EE02B5E007124DC /* FormHistoryView.swift in Sources */,
 				AD314B782ED5DA130068B631 /* ScrollableTabBar.swift in Sources */,
 				ADD846932ED59D01005AA436 /* InventoryViewModel.swift in Sources */,
 				ADD0169B2EBA207C0044A0B4 /* LoginModels.swift in Sources */,
@@ -510,6 +532,7 @@
 				ADD016992EBA1E640044A0B4 /* LoginViewModel.swift in Sources */,
 				ADFC6FCE2ECDFFAD004DF80F /* CardStyle.swift in Sources */,
 				AD314B752ED5A55C0068B631 /* JobItemViewModel.swift in Sources */,
+				AD39436A2EDECF4800300B6C /* JobDetailView.swift in Sources */,
 				ADD016642EBA12DC0044A0B4 /* ContentView.swift in Sources */,
 				ADD846942ED59D01005AA436 /* InventoryModels.swift in Sources */,
 				AD314B7B2ED5F69B0068B631 /* JobService.swift in Sources */,
@@ -518,6 +541,7 @@
 				AD314B7C2ED5F69B0068B631 /* JobListViewModel.swift in Sources */,
 				ADD016622EBA12DC0044A0B4 /* VpieNextGenApp.swift in Sources */,
 				AD0D45392EC378670021068B /* ActionRow.swift in Sources */,
+				AD39436C2EDEDD5D00300B6C /* NewJobView.swift in Sources */,
 				ADD0169F2EBA76710044A0B4 /* AuthService.swift in Sources */,
 				ADCBFE3F2EC47E4D001E458C /* DeviceBehaviorUpdater.swift in Sources */,
 			);

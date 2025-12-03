@@ -34,7 +34,7 @@ struct LoginView: View {
                                 formSection(geo: geo)
                             }
                             .cardStyle(padding: AppPadding.large)
-                            .padding(.top, AppPadding.medium)
+                            .padding(.top, sizeClass == .compact ? AppPadding.medium : AppPadding.xlarge )
                             Button(action: {}) {
                                 Text("privacy_policy")
                                     .underline()
@@ -44,7 +44,6 @@ struct LoginView: View {
                             Button(action: {}) {
                                 Text("Powered by VEPO Solutions")
                                     .font(.system(size: FontSize.standard, weight: .medium))                    .foregroundColor(.vpieGray)
-                                
                             }
                         }
                     }

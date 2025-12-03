@@ -6,18 +6,39 @@
   
 */
 
+/* Common */
+"two_point_space" = ": ";
+
+
+/* Login */
 "privacy_policy" = "Privacy Policy";
+
+
+/* Inventory */
 "scan_barcode_camera" = "Scan with camera";
 "scan_barcode_device" = "Scan with device";
 "mark_as_defective" = "Mark as defective";
-"delete_user" = "Delete user";
-"logout" = "Logout";
+"update_inventory" = "Update inventory";
+
+/* Settings & Account */
 "sync_now" = "Synchronize now";
 "send_diagnostics" = "Send diagnostics";
 "sync_inventory_data" = "Sync inventory data";
-"update_inventory" = "Update inventory";
+"delete_user" = "Delete user";
+"logout" = "Logout";
+
+/* Job */
 "directions" = "Directions";
 "resume" = "Resume";
+"add_note" = "+ Add note";
+"add_form" = "+ Add form";
+"add_photo" = "+ Add photo";
+"job_date" = "Job Date & Time";
+
+
+
+"technician" = "Technician";
+
 
 
 

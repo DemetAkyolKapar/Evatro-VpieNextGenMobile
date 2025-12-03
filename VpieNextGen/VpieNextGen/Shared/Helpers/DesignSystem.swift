@@ -13,6 +13,8 @@ struct AppPadding {
     static let small: CGFloat = 10
     static let medium: CGFloat = 12
     static let large: CGFloat = 24
+    static let xlarge: CGFloat = 48
+
 }
 
 struct AppCornerRadius {

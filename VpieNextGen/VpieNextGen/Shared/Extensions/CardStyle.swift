@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct CardStyle1: ViewModifier {
+struct CardStyle: ViewModifier {
     var padding: CGFloat
     var cornerRadius: CGFloat
     var strokeColor: Color
@@ -46,7 +46,7 @@ extension View {
         backgroundColor: Color = .cardBackground
     ) -> some View {
         self.modifier(
-            CardStyle1(
+            CardStyle(
                 padding: padding,
                 cornerRadius: cornerRadius,
                 strokeColor: strokeColor,

@@ -10,18 +10,13 @@ import SwiftUI
 struct JobListView: View {
    
     @StateObject var vm: JobListViewModel
-
-    @Environment(\.horizontalSizeClass) private var hSizeClass
     @Environment(\.deviceBehavior) private var deviceBehavior
 
-    private var isTwoColumn: Bool {
-        deviceBehavior == .pad || hSizeClass == .regular
-    }
 
     private var columns: [GridItem] {
         Array(
             repeating: GridItem(.flexible(), spacing: 16, alignment: .top),
-            count: isTwoColumn ? 2 : 1
+            count: (deviceBehavior == .pad) ? 2 : 1
         )
     }
 

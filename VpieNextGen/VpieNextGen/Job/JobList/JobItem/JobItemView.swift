@@ -21,9 +21,11 @@ protocol JobItemVMProtocol: ObservableObject {
 
 struct JobItemView<VM: JobItemVMProtocol>: View {
     @StateObject private var vm: VM
+    private let showBottomButtons: Bool
     
-    init(viewModel: VM) {
+    init(viewModel: VM, showBottomButtons: Bool = true) {
         _vm = StateObject(wrappedValue: viewModel)
+        self.showBottomButtons = showBottomButtons
     }
     
     var body: some View {
@@ -36,7 +38,9 @@ struct JobItemView<VM: JobItemVMProtocol>: View {
                         style: StrokeStyle(lineWidth: 1, dash: [2]))
                 .frame(height: 0.5)
             dynamicRows
-            bottomButtons
+            if showBottomButtons {
+                bottomButtons
+            }
         }
         .cardStyle()
     }
@@ -147,7 +151,7 @@ struct JobItemView<VM: JobItemVMProtocol>: View {
     
 //    @available(iOS 16.0, *)
 //    private var dynamicGrid: some View {
-//        
+//
 //        FlowLayout(spacing: 12) {
 //            if let lastRead = vm.lastReadProvided, !lastRead.isEmpty {
 //                Text("Last Provided Provided: \(lastRead)")
@@ -165,7 +169,7 @@ struct JobItemView<VM: JobItemVMProtocol>: View {
 //                Text("Olwefwed R: \(radio)")
 //                    .itemStyle()
 //            }
-//            
+//
 //        }
 //    }
 //    bu kısım ihtiyaç olursa geri açılabilir sığdığı kadar sığmazsa alt satıra geç geliştirmesi
@@ -232,7 +236,7 @@ struct JobItemView<VM: JobItemVMProtocol>: View {
 #Preview {
     VStack(spacing: 16) {
         JobItemView(viewModel: MockJobItemVM(sample: 1))
-        JobItemView(viewModel: MockJobItemVM(sample: 234565))
+        JobItemView(viewModel: MockJobItemVM(sample: 234565), showBottomButtons: false)
     }
     .padding()
     .background(Color(.systemGroupedBackground))
@@ -241,13 +245,13 @@ struct JobItemView<VM: JobItemVMProtocol>: View {
 //@available(iOS 16.0, *)
 //struct FlowLayout: Layout {
 //    var spacing: CGFloat = 24
-//    
+//
 //    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
 //        let containerWidth = proposal.width ?? 0
 //        var currentX: CGFloat = 0
 //        var lineHeight: CGFloat = 0
 //        var totalHeight: CGFloat = 0
-//        
+//
 //        for index in subviews.indices {
 //            let subview = subviews[index]
 //            let subviewSize = subview.sizeThatFits(.unspecified)
@@ -262,23 +266,23 @@ struct JobItemView<VM: JobItemVMProtocol>: View {
 //        totalHeight += lineHeight
 //        return CGSize(width: containerWidth, height: totalHeight)
 //    }
-//    
+//
 //    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
 //        var currentX: CGFloat = bounds.minX
 //        var currentY: CGFloat = bounds.minY
 //        var lineHeight: CGFloat = 0
-//        
+//
 //        for index in subviews.indices {
 //            let subview = subviews[index]
 //            let subviewSize = subview.sizeThatFits(.unspecified)
-//            
+//
 //            if currentX + subviewSize.width > bounds.maxX {
 //                currentY += lineHeight + spacing
 //                currentX = bounds.minX
 //                lineHeight = 0
 //            }
 //            subview.place(at: CGPoint(x: currentX, y: currentY), anchor: .topLeading, proposal: .unspecified)
-//            
+//
 //            currentX += subviewSize.width + spacing
 //            lineHeight = max(lineHeight, subviewSize.height)
 //        }
